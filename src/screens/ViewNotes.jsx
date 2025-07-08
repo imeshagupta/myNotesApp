@@ -69,7 +69,6 @@ export default ViewNotes;
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     padding: 20,
     backgroundColor: '#FFFECE',
   },
@@ -102,5 +101,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#A59BE1',
     textAlignVertical: 'top',
+    minHeight: 400,
+    marginBottom: 40,
   },
 });
