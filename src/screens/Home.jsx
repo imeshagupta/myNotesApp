@@ -11,36 +11,59 @@ const Home = ({ navigation }) => {
     {
       id: '1',
       heading: '7 July',
-      content:
-        'Today I officially began the development of my personal notes application using React Native. First, I created the project using the CLI and set up the folder structure. I decided not to use any external database for now, so I’ll manage the state locally using useState. I also created a simple data array to simulate stored notes. Overall, the basic layout is done and the app is rendering properly without errors.',
+      content: `Today, I tried to wake up early and start my day with some exercise. It was a bit difficult at first, but I felt more energetic afterwards. I realized that even small changes in routine can have a big impact on how you feel throughout the day.
+
+I began with some simple stretches and then did a short walk around the block. The fresh air helped clear my mind and boosted my mood. While exercising, I thought about how important it is to take care of our bodies, especially when we spend so much time sitting and working on computers.
+
+After exercise, I had a healthy breakfast and felt ready to face the day. I plan to make this a daily habit and gradually increase my activity level. It might be challenging at first, but I believe consistency is the key.
+
+Overall, today’s experience taught me that even small steps towards a healthier lifestyle are worth the effort. I’m motivated to keep going and see where this journey leads me.`,
       isFav: false,
     },
     {
       id: '2',
       heading: '8 July',
-      content:
-        'Spent most of the day integrating navigation between different screens using React Navigation. Installed `@react-navigation/native` and `@react-navigation/native-stack`, and created two main screens: one to list all notes, and another to view an individual note. I also passed data using the `route.params` object and confirmed that note details are being received properly on the View screen. Still need to work on editing notes though.',
+      content: `The weather was very pleasant today, with a gentle breeze and clear skies. I decided to take a walk in the park near my house to enjoy the fresh air and the beauty of nature. As I walked, I noticed the vibrant colors of the flowers blooming everywhere and listened to the melodious chirping of birds perched on the trees. It was a peaceful scene that made me appreciate how important it is to protect and care for our environment.
+
+During my walk, I met a few neighbors and exchanged greetings. It felt nice to connect with people in the community. I also saw some children playing and laughing, which reminded me of the simple joys of childhood. It’s easy to get caught up in daily worries, but moments like these help us slow down and find happiness in small things.
+
+Later, I sat on a bench and reflected on how much nature gives us without asking for anything in return. This made me think about ways I can contribute, like reducing waste, planting trees, and conserving water. I hope to be more mindful in my daily habits.
+
+Overall, today was a wonderful reminder of the beauty around us and the responsibility we have to protect it for future generations.`,
       isFav: false,
     },
     {
       id: '3',
       heading: '9 July',
-      content:
-        'The UI needed improvement, so I dedicated today to styling the note cards and detail views. Added background colors, padding, border radius, and shadows for a clean, minimal feel. I also added a "favorite" feature — each note now has a star icon that toggles a boolean value in state. Used conditional rendering and icons from `react-native-vector-icons`. The delete functionality was also implemented using `filter` to remove the selected note.',
+      content: `Today, I spent some time helping my younger brother with his studies. It was a rewarding experience because teaching someone else helped me understand my own lessons better. Sometimes, explaining concepts out loud makes things clearer.
+
+We focused on his math homework, and I tried to make the problems easier by breaking them down step by step. My brother seemed happy when he solved the problems correctly, which motivated both of us. I hope he does well in his exams.
+
+Besides studies, I also shared some tips on managing time and staying organized. It felt good to support a family member and be helpful. These small moments strengthen our bond.
+
+Helping others is not just about giving; it’s about learning and growing together. I want to continue being a good guide and friend for my brother as he navigates school.`,
       isFav: false,
     },
     {
       id: '4',
       heading: '10 July',
-      content:
-        'Today was focused on making individual notes editable. I replaced static Text components with multiline TextInputs and added a pencil icon to toggle edit mode. Once in edit mode, users can update the title and content. A "check" icon is shown to save changes. On save, I update the state using `setdata()` and map over the existing data to find the right note by ID. Added feedback via Alert for successful save. This made the app feel much more complete.',
+      content: `I spent the day reading my favourite book. It was relaxing and helped me forget about stress. Books open new worlds and teach us many things. I want to read more in the future.`,
       isFav: false,
     },
     {
       id: '5',
       heading: '11 July',
-      content:
-        'This was the final day of core functionality. I reviewed the entire codebase for improvements, fixed minor layout bugs, and ensured that all features (edit, delete, favorite) work smoothly. Planning to add persistent storage using AsyncStorage soon. I also took a screen recording to demonstrate how the app works, and started writing a README file for GitHub. This app has been a great hands-on learning experience for building functional, state-driven React Native apps.',
+      content: `Today was a peaceful day filled with deep reflection and thoughtful moments that allowed me to understand myself better and plan for the future. I woke up feeling calm, which was a nice change from the usual rush of everyday life.
+
+After a simple breakfast, I settled into my favorite quiet corner with a notebook and pen, ready to jot down my thoughts. I thought about my goals, both short-term and long-term, and the steps I need to take to achieve them. I realized that some challenges I face are not as big as they seem, and with patience and persistence, I can overcome them.
+
+I also reflected on my strengths and areas where I can improve. It’s important to recognize what I do well to build confidence, but also to be honest about what needs work. I made a list of habits I want to develop, such as better time management, staying focused, and maintaining a positive mindset.
+
+The afternoon was spent planning a schedule that balances work, study, rest, and leisure. I know that balance is key to avoiding burnout and staying motivated. I also reminded myself to celebrate small victories and not be too hard on myself when things don’t go as planned.
+
+In the evening, I took a short walk outside and appreciated the sunset, which made me feel grateful for the simple beauties of life. I believe that gratitude can improve mental well-being and help me stay grounded.
+
+Overall, today’s reflection gave me clarity and renewed energy. I am determined to keep moving forward, learning from my experiences, and growing into a better version of myself every day. The journey may not always be easy, but it will be worth it.`,
       isFav: false,
     },
   ]);
