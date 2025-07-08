@@ -1,4 +1,10 @@
-import { StyleSheet, Text, View, TextInput, Pressable } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  ScrollView,
+  TextInput,
+  Pressable,
+} from 'react-native';
 import React, { useState } from 'react';
 
 const AddNotes = ({ data, setdata }) => {
@@ -19,7 +25,7 @@ const AddNotes = ({ data, setdata }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.label}>Title:</Text>
       <TextInput
         style={styles.titleInput}
@@ -40,7 +46,7 @@ const AddNotes = ({ data, setdata }) => {
       <Pressable style={styles.addButton} onPress={addItemHandler}>
         <Text style={styles.addButtonText}>+ Add</Text>
       </Pressable>
-    </View>
+    </ScrollView>
   );
 };
 

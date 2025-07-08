@@ -1,4 +1,11 @@
-import { StyleSheet, TextInput, View, Pressable, Alert } from 'react-native';
+import {
+  StyleSheet,
+  TextInput,
+  ScrollView,
+  View,
+  Pressable,
+  Alert,
+} from 'react-native';
 import { useState } from 'react';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icon from 'react-native-vector-icons/Feather';
@@ -21,7 +28,7 @@ const ViewNotes = ({ route, navigation }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.iconRow}>
         <Pressable onPress={() => setIsEditing(!isEditing)} style={styles.icon}>
           <MaterialCommunityIcons
@@ -54,7 +61,7 @@ const ViewNotes = ({ route, navigation }) => {
         multiline
         editable={isEditing}
       />
-    </View>
+    </ScrollView>
   );
 };
 

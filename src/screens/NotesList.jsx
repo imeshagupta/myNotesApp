@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, FlatList, Pressable } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  ScrollView,
+  View,
+  FlatList,
+  Pressable,
+} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -12,7 +19,7 @@ const NotesList = ({
   emptyMessage,
 }) => {
   return (
-    <View style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container}>
       <FlatList
         data={data}
         keyExtractor={item => item.id}
@@ -54,7 +61,7 @@ const NotesList = ({
         ListEmptyComponent={<Text style={styles.itemText}>{emptyMessage}</Text>}
         contentContainerStyle={{ gap: 10 }}
       />
-    </View>
+    </ScrollView>
   );
 };
 
