@@ -101,7 +101,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#E0D9FB',
     borderWidth: 1,
     borderColor: '#A59BE1',
-    flex: 1,
     textAlignVertical: 'top',
   },
 });
